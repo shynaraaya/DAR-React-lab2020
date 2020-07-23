@@ -1,0 +1,35 @@
+.App {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-wrapper {
+    padding: 1rem 1.5rem;
+}
+
+.App-profile-photo {
+    border-radius: 4px;
+    padding: 5px;
+    width: min-content;
+}
+
+.App-wrapper .App-login-btn {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: white;
+    border: 1px solid darkorchid;
+    color: darkorchid;
+    transition-property: color, background-color;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+
+.App-wrapper .App-login-btn:hover {
+     background-color: darkorchid;
+     color: white;
+ }
