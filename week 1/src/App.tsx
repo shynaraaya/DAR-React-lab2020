@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
 import { Hello } from './components/hello/hello';
-import './me.jpg';
+import { Avatar } from './components/profile/photo';
 
 function App() {
 
-    const file = require('./me.jpg');
+    const file = '/me.jpg';
 
     const [clicked, setClicked] = useState<boolean>();
 
@@ -29,7 +29,10 @@ function App() {
       <div className="App-wrapper">
           { clicked ? <Hello name={name} />: null}
           <div className="App-profile-photo">
-          { clicked ? < img src={avatar} alt='' />: null}
+              {/* Image appears after name onClick
+          { name ? <Avatar avatar={file} />: null}
+              */}
+          { name==='Shynar' ? <Avatar avatar={file} />: null}
           </div>
 
         <button className="App-login-btn" onClick={btnClickLoginHandler}>Log In</button>
