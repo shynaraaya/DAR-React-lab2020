@@ -1,0 +1,48 @@
+.App {
+    --brand-color: #e91e63;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .nav-menu {
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 0;
+            list-style: none;
+            margin-right: 2rem;
+
+            li {
+                margin-right: 1rem;
+
+                a {
+                    color: var(--brand-color);
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    padding: 0.5rem 0;
+
+                    &:hover {
+                        border-bottom: 2px solid var(--brand-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .avatar {
+            display: block;
+            width: 200px;
+            margin: auto;
+        }
+    }
+}

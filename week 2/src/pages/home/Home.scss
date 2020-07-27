@@ -1,0 +1,65 @@
+.Home {
+
+  h1 {
+    text-align: center;
+  }
+
+  .hello-header-enter {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  .hello-header-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 400ms, transform 400ms;
+  }
+
+  .btn-wrapper {
+    padding: 1rem 1.5rem;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .login-btn {
+      padding: 1rem 1.5rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+      outline: none;
+      background-color: #fff;
+      border: 1px solid var(--brand-color);
+      color: var(--brand-color);
+      transition-property: color, background-color;
+      transition-duration: 400ms;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--brand-color);
+        color: #fff;
+      }
+
+      opacity: 0;
+      transform: translateY(200%);
+      animation: 250ms ease-out 100ms 1 slideInFromBottom;
+      animation-fill-mode: forwards;
+
+      &:nth-child(2) {
+        animation-delay: 250ms;
+      }
+    }
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
