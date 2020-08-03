@@ -1,0 +1,31 @@
+.PostDetail {
+  .post-detail {
+    background: aliceblue;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid #efefef;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+  .PostItem-btn {
+    padding: 1rem 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid red;
+    color: black;
+    transition-property: color, background-color;
+    transition-duration: 400ms;
+    cursor: pointer;
+
+    &:hover {
+      background-color: red;
+      color: white;
+    }
+  }
+}
+
