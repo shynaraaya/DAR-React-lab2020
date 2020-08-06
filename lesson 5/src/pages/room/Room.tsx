@@ -53,7 +53,7 @@ export const Room: React.FunctionComponent = () => {
                     <div className="video-controls">
                         <PlayerControlButton type="button" svg="minusTen" clickHandler={minusTenSec} />
                         <PlayerControlButton type="button" svg={playerState !== PlayerStates.PLAYING ? 'play' : 'pause'} clickHandler={toggleVideo} />
-                        <PlayerControlButton type="button" svg="plusTen" clickHandler={minusTenSec} />
+                        <PlayerControlButton type="button" svg="plusTen" clickHandler={plusTenSec} />
                     </div>
                 </div>
                 <UserContext.Consumer>
