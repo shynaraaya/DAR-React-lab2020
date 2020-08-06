@@ -1,0 +1,17 @@
+.Home {
+  .login-btn {
+    border: 1px solid #e91e63;
+    color: #e91e63;
+
+    &:hover {
+      background-color: #e91e63;
+      color: #fff;
+    }
+  }
+  .btn-wrapper {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}

@@ -1,0 +1,17 @@
+.Room {
+  display: flex;
+  flex-direction: column;
+
+  .room-wrapper {
+    display: flex;
+  }
+
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Chat {
+    margin-left: 10px;
+  }
+}
